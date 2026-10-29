@@ -1,0 +1,38 @@
+/* まどべ猫の勉強部屋 - 公開ページ共通（夜の窓辺の色） */
+:root {
+  --night: #121827;
+  --panel: #1b2236;
+  --ink: #f7f0e3;
+  --ink-soft: rgba(247, 240, 227, 0.72);
+  --line: rgba(247, 240, 227, 0.16);
+  --lamp: #f3c46b;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--night);
+  color: var(--ink);
+  font-family: "Hiragino Maru Gothic ProN", "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  line-height: 1.8;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
+header img { width: 72px; height: 72px; border-radius: 16px; flex-shrink: 0; }
+header h1 { font-size: 22px; margin: 0; line-height: 1.4; }
+header p { margin: 2px 0 0; color: var(--ink-soft); font-size: 14px; }
+h2 { font-size: 18px; margin: 36px 0 8px; color: var(--lamp); }
+h3 { font-size: 16px; margin: 24px 0 4px; }
+p, li { font-size: 15px; }
+ul { padding-left: 1.2em; }
+a { color: var(--lamp); }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin: 16px 0; }
+.button {
+  display: inline-block; margin-top: 8px; padding: 12px 22px; border-radius: 999px;
+  background: var(--lamp); color: #1c1a16; font-weight: 700; text-decoration: none;
+}
+.lang { display: flex; gap: 8px; margin: 8px 0 24px; flex-wrap: wrap; }
+.lang a { padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; color: var(--ink-soft); font-size: 14px; }
+.muted { color: var(--ink-soft); font-size: 13px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+footer { margin-top: 48px; color: var(--ink-soft); font-size: 13px; }
